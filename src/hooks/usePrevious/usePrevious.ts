@@ -1,4 +1,5 @@
-import { useRef, useEffect, type MutableRefObject } from 'react';
+import { useRef, useEffect } from 'react';
+import type { MutableRefObject } from 'react';
 
 const usePrevious = <T>(value: T): MutableRefObject<T | undefined>['current'] => {
   const ref = useRef<T>();

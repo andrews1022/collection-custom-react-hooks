@@ -1,7 +1,8 @@
 /* eslint-disable no-unused-vars */
 
-import { AnimationControls, useAnimation } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import type { AnimationControls } from 'framer-motion';
 
 const useScroll = (): [
   element: (node?: Element | null | undefined) => void,
